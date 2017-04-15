@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
+const uglify = require('gulp-uglify')
 const babel = require('gulp-babel')
 const browserify = require('gulp-browserify')
 
@@ -17,6 +18,7 @@ gulp.task('js', () => {
     .pipe(babel({
       presets: ['es2015']
     }))
+    .pipe(uglify())
     .pipe(gulp.dest('js'))
 })
 
