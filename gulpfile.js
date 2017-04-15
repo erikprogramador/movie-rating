@@ -22,9 +22,14 @@ gulp.task('js', () => {
     .pipe(gulp.dest('js'))
 })
 
+gulp.task('copy', () => {
+  return gulp.src('node_modules/font-awesome/fonts/**')
+    .pipe(gulp.dest('fonts'))
+})
+
 gulp.task('watch', () => {
   gulp.watch('styles/**/*.{scss,sass}', ['sass'])
   gulp.watch('scripts/**/*.js', ['js'])
 })
 
-gulp.task('default', ['sass', 'js'])
+gulp.task('default', ['sass', 'js', 'copy'])
