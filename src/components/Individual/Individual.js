@@ -4,7 +4,7 @@ import Comments from '../Comments/Comments'
 import Latest from '../Movie/Latest'
 
 const Individual = () => (
-  <main class="container">
+  <main className="container">
     <MovieInfo />
     <div className="container"><hr/></div>
       <div className="container">
