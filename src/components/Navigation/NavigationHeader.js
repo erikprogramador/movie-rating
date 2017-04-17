@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavigationHeader = () => (
   <header className="navbar-header">
@@ -8,7 +9,7 @@ const NavigationHeader = () => (
       <span className="icon-bar"></span>
       <span className="icon-bar"></span>
     </button>
-    <a className="navbar-brand" href="/">Movie Rating</a>
+    <Link className="navbar-brand" to="/">Movie Rating</Link>
   </header>
 )
 
