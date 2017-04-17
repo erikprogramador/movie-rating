@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Star from '../Movie/Star'
 
 class FeaturedMaster extends Component {
   render () {
@@ -9,11 +10,7 @@ class FeaturedMaster extends Component {
         <div className="caption">
           <h3>
             {item.title}
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star-half-o"></i>
-            <i className="fa fa-star-o"></i>
+            <Star count={2} />
           </h3>
           <p>{item.description}</p>
           <p className="text-right"><a href="#" className="btn btn-success" role="button">Show more</a></p>

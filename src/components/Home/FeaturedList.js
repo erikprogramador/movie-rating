@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Star from '../Movie/Star'
 
 class FeaturedList extends Component {
   render () {
@@ -11,11 +12,7 @@ class FeaturedList extends Component {
         <div className="col-md-9">
           <h4>
             {item.title}
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star-half-o"></i>
-            <i className="fa fa-star-o"></i>
-            <i className="fa fa-star-o"></i>
+            <Star count={2} />
           </h4>
           <p>{item.description}</p>
           <p className="text-right">
