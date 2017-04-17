@@ -7,7 +7,7 @@ const Navigation = () => (
     <div className="container">
       <NavigationHeader />
 
-      <NavigationLinks />
+      <NavigationLinks dropUp={false} />
     </div>
   </nav>
 )
