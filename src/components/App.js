@@ -8,6 +8,7 @@ import Home from './Home/Home'
 import Individual from './Individual/Individual'
 import Footer from './Navigation/Footer'
 import RegisterLogin from './Auth/RegisterLogin'
+import Profile from './Profile/Profile'
 
 const App = () => (
   <Router>
@@ -16,6 +17,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/individual" component={Individual} />
       <Route path="/login" component={RegisterLogin} />
+      <Route path="/profile" component={Profile} />
       <Footer />
     </div>
   </Router>

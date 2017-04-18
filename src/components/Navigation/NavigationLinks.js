@@ -22,6 +22,7 @@ const NavigationLinks = (props) => (
       </li>
       <li><Link to="/login">Login</Link></li>
       <li><Link to="/login">Register</Link></li>
+      <li><Link to="/profile">Profile</Link></li>
     </ul>
   </div>
 )
